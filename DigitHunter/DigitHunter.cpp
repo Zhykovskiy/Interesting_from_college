@@ -19,13 +19,13 @@ int main()
     while (word != NULL)
     {
 
-        for (int j = 0; j < strlen(word); j++)
+        for (int j = 0; word[j] != '0'; j++)
         {
             if (isdigit(word[j]))
             {
                 break;
             }
-            if (j == strlen(word) - 1)
+            if (word[j + 1] == '\0')
             {
                 cout << word << " ";
             }
